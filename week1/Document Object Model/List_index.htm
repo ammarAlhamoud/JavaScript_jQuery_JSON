@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ammar Alhamoud</title>
+  </head>
+  <body>
+    <p>
+      <a href="#" onclick="add(); return false;">More</a>
+    </p>
+    <ul id="list_items">
+      <li>First Item</li>
+    </ul>
+    <script type="text/javascript">
+      i = 1;
+      function add(){
+        i++;
+        var x = document.createElement('Li');
+        x.className = 'list_items';
+        x.innerHTML = i + ". New Item";
+        document.getElementById('list_items').appendChild(x);
+      }
+    </script>
+  </body>
+</html>

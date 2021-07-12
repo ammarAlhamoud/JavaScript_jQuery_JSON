@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Spinner</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="jquery-3.6.0.min.js">
+    </script>
+    <p id="sp_par">
+      Where is my Spinner?
+      <img id="sp_img" src="https://img.fcbayern.com/image/upload/q_auto,f_auto/w_800,h_1067,c_pad/eCommerce/produkte/22160/spinner.png"
+      height="100" style="vertical-align: middle; display:none;">
+    </p>
+
+    <a href="#" onclick="$('#sp_img').toggle(); return false;">Toggle</a>
+    <a href="#" onclick="$('#sp_par').css('background-color', 'red'); return false;">Red</a>
+    <a href="#" onclick="$('#sp_par').css('background-color', 'green'); return false;">Green</a>
+  </body>
+</html>

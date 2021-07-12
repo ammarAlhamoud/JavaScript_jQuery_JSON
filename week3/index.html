@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery is fun</title>
+  </head>
+  <body>
+    <p id="par1">Here is the JQuery Test Content</p>
+    <script type="text/javascript" src="jquery-3.6.0.min.js">
+    </script>
+    <script type="text/javascript">
+      $(document).ready(
+        function(){
+          alert("Hello JQuery World!");
+          window.console && console.log('Hello JQuery ..');
+        }
+      );
+
+      $(window).resize(
+        function(){
+          if($(window).width()> 800){
+            $('#par1').css('background-color', 'green')
+          }
+          else {
+            $('#par1').css('background-color', 'red')
+          }
+          console.log('.resize() called. width=' + $(window).width() + ' height=' + $(window).height());
+        }
+      );
+    </script>
+  </body>
+</html>

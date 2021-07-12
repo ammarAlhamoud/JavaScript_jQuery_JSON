@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ammar Alhamoud</title>
+  </head>
+  <body>
+    <p> Hello, <b><span id="name">Ammar</span></b>!</p>
+    <script type="text/javascript">
+      st = document.getElementById('name').innerHTML;
+      console.log("ST = " + st);
+      console.dir(document.getElementById('name'));
+    </script>
+    <p><a href="" onclick="document.getElementById('name').innerHTML = 'Others'; return false;">Click Me </a></p>
+  </body>
+</html>
